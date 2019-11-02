@@ -1,0 +1,86 @@
+.space .user-space .header {
+  text-align: center;
+}
+.space .user-space .header p {
+  font-size: 28px;
+}
+.space .user-space .battlefield-space .battlefield {
+  margin: 20px 20px;
+  position: relative;
+}
+.space .user-space .battlefield-space .battlefield .table {
+  border-spacing: 0;
+  overflow: hidden;
+  border-collapse: collapse;
+}
+.space
+  .user-space
+  .battlefield-space
+  .battlefield
+  .table
+  .table-body
+  .table-body-row:hover {
+  background: #fcc;
+}
+.space
+  .user-space
+  .battlefield-space
+  .battlefield
+  .table
+  .table-body
+  .table-body-row
+  .table-body-row-cell {
+  width: 70px;
+}
+.space
+  .user-space
+  .battlefield-space
+  .battlefield
+  .table
+  .table-body
+  .table-body-row
+  .table-body-row-cell:hover {
+  background: #ffc;
+}
+.space
+  .user-space
+  .battlefield-space
+  .battlefield
+  .table
+  .table-body
+  .table-body-row
+  .table-body-row-cell:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  background: #cfc;
+  z-index: -1;
+}
+.space
+  .user-space
+  .battlefield-space
+  .battlefield
+  .table
+  .table-body
+  .table-body-row
+  .table-body-row-cell
+  .cell {
+  width: 70px;
+  height: 40px;
+}
+.space .control-space {
+  width: 70%;
+  height: 100%;
+}
+.space .control-space .table {
+  width: 100%;
+}
+.space .control-space .table .table-row {
+  font-size: 24px;
+}
+.space .control-space .table .table-row .table-row-cell button {
+  font-size: 24px;
+}

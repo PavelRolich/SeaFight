@@ -1,0 +1,74 @@
+.space {
+  .user-space {
+    .header {
+      text-align: center;
+
+      p {
+        font-size: 28px;
+      }
+    }
+    .battlefield-space {
+      .battlefield {
+        margin: 20px 20px;
+        position: relative;
+      
+        .table {
+          border-spacing: 0;
+          overflow: hidden;
+          border-collapse: collapse;
+      
+          .table-body {
+            .table-body-row {
+      
+              &:hover {
+                background: #fcc;
+              }
+      
+              .table-body-row-cell {
+                width: 70px;
+      
+                &:hover {
+                  background: #ffc;
+                }
+      
+                &:hover::after {
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  width: 70px;
+                  background: #cfc;
+                  z-index: -1;
+                }
+      
+                .cell {
+                  width: 70px;
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .control-space {
+    width: 70%;
+    height: 100%;
+
+    .table {
+      width: 100%;
+
+      .table-row {
+        font-size: 24px;
+
+        .table-row-cell {
+          button {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

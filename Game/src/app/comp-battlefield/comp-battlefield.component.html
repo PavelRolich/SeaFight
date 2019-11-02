@@ -1,0 +1,33 @@
+<div class="space">
+    <mat-grid-list cols="2" rowHeight="500px">
+      <mat-grid-tile>
+        <div class="user-space">
+          <div class="header">
+            <p>Comp Battlefield</p>
+          </div>
+          <div class="battlefield-space">
+            <div class="battlefield">
+              <table class="table">
+                <thead class="table-head">
+                  <tr class="table-head-row">
+                    <td class="table-head-row-cell" *ngFor="let coll of collsName"><a class="cell" mat-button>{{ coll }}</a></td>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr class="table-body-row" *ngFor="let row of rowsName">
+                    <td class="first-coll"><a class="cell" mat-button>{{ row }}</a></td>
+                    <td class="table-body-row-cell" *ngFor="let row of rowsName"><a class="cell" mat-button></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="control-space">
+          <p class="text-area">Steps of war</p>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
